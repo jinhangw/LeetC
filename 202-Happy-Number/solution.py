@@ -7,12 +7,14 @@ class Solution(object):
         if (n == 1):
             return True
         res = 0
-        copyN = n
-        while (n / 10 != 0):
+        while (res != 1):
+            if (res == n):
+                return False
+            if (res != 0):
+                n = res
+                res = 0
+            while (n / 10 != 0):
+                res += (n%10)^2
+                n /= 10
             res += (n%10)^2
-            n /= 10
-        res += (n%10)^2
-        if (res == copyN):
-            return False
-        else:
-            return self.isHappy(res)
+        return True
