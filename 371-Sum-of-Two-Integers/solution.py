@@ -5,7 +5,13 @@ class Solution(object):
         :type b: int
         :rtype: int
         """
-        while (b != 0):
-            a++
-            b--
+        if (b>0):
+            while (b > 0):
+                a++
+                b--
+        else:
+            while (b < 0):
+                a--
+                b++
         return a
+        
