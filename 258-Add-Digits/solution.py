@@ -8,8 +8,9 @@ class Solution(object):
         while (num / 10 != 0):
             res += num % 10
             num /= 10
+        res += num
         if (res / 10 != 0):
-            return self.addDigits(self, res)
+            return self.addDigits(res)
         else:
             return res
             
