@@ -9,7 +9,7 @@ class Solution(object):
             res += num % 10
             num /= 10
         if (res / 10 != 0):
-            return addDigits(self, res)
+            return self.addDigits(self, res)
         else:
             return res
             
