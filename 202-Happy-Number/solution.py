@@ -10,11 +10,12 @@ class Solution(object):
         while (res != 1):
             if (res == n):
                 return False
-            if (res != 0):
-                n = res
-                res = 0
+            
             while (n / 10 != 0):
                 res += (n%10)^2
                 n /= 10
             res += (n%10)^2
+            if (res != 0 and res != 1):
+                n = res
+                res = 0
         return True
