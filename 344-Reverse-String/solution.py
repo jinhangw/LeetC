@@ -5,4 +5,4 @@ class Solution(object):
         :type s: str
         :rtype: str
         """
-        return reverse(s)
+        return reversed(s)
