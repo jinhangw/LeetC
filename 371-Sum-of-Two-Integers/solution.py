@@ -5,7 +5,7 @@ class Solution(object):
         :type b: int
         :rtype: int
         """
-        
-        ans = a + b
-        return ans
+        return int(math.log(math.exp(a) * math.exp(b)))
+
+
         
